@@ -41,10 +41,13 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 
+  gem 'capybara'
+
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
+
+  gem 'factory_girl_rails', '~> 4.0'
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
-  gem 'capybara'
   gem 'rspec-rails', '~> 3.5'
 end
 
