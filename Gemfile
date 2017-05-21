@@ -12,6 +12,8 @@ gem 'rails', '~> 5.0.1'
 gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
+# Use bootstrap-sass
+gem 'bootstrap-sass', '~> 3.3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -38,6 +40,12 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
+  gem 'capybara'
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
