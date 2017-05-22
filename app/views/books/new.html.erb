@@ -1,0 +1,28 @@
+<div class="container">
+
+
+  <h1 class="page-header">Enter your book details</h1>
+
+  <%= form_for :book, url: books_path do |f| %>
+      <p>
+        <%= f.label :title %><br>
+        <%= f.text_field :title %>
+      </p>
+
+      <p>
+        <%= f.label :author %><br>
+        <%= f.text_field :author %>
+      </p>
+
+      <p>
+        <%= f.label 'Is this a series?' %>
+        <%= f.radio_button :is_series, true, :checked => true %> Yes
+        <%= f.radio_button :is_series, false %> No
+      </p>
+
+      <p>
+        <%= f.submit %>
+      </p>
+  <% end %>
+
+</div>
