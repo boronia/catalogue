@@ -1,0 +1,112 @@
+books:
+  -
+    title: Hunter X Hunter
+    author: 冨樫 義博
+    is_series: true
+    latest_volume: 25
+    current_volume: 25
+    owner: Von
+    category: Manga
+
+  -
+    title: Vagabond
+    author: 井上雄彦
+    is_series: true
+    owner: Von
+    latest_volume: 10
+    current_volume: 8
+    category: Manga
+
+  -
+    title: Quarantine
+    author: Greg Egan
+    is_series: false
+    owner: Von
+    category: Sci-Fi
+
+  -
+    title: The Windup Girl
+    author: Paolo Bacigalupi
+    is_series: false
+    owner: Von
+    category: Sci-Fi
+
+  -
+    title: One Punch Man
+    author: One
+    is_series: true
+    latest_volume: 20
+    current_volume: 4
+    owner: Andrew
+    category: Manga
+
+  -
+    title: Ready Player One
+    author: Ernest Cline
+    is_series: false
+    owner: Andrew
+    category: Sci-Fi
+
+  -
+    title: Catch 22
+    author: Joseph Heller
+    is_series: false
+    owner: Andrew
+    category: Fiction
+
+  -
+    title: Hilda and the Bird Parade
+    author: Luke Pearson
+    is_series: true
+    owner: Jade
+    category: Comic
+
+  -
+    title: Hilda and the Troll
+    author: Luke Pearson
+    is_series: true
+    owner: Jade
+    category: Comic
+
+  -
+    title: Hilda and the Black Hound
+    author: Luke Pearson
+    is_series: true
+    owner: Jade
+    category: Comic
+
+  -
+    title: Thelma the Unicorn
+    author: Aaron Blabey
+    is_series: false
+    owner: Clara
+    category: Kids
+
+  -
+    title: Where's the green sheep
+    author: Memfox
+    is_series: false
+    owner: Clara
+    category: Kids
+
+  -
+    title: The Gruffalo
+    author: Julia Donaldson
+    is_series: false
+    owner: Jade
+    category: Kids
+
+  -
+    title: The Gruffalo's child
+    author: Julia Donaldson
+    is_series: false
+    owner: Clara
+    category: Kids
+
+  -
+    title: The Anubis Gate
+    author: Tim Powers
+    is_series: false
+    owner: Andrew
+    category: Fantasy
+
