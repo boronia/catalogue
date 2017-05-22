@@ -1,5 +1,10 @@
 class BooksController < ApplicationController
 
+  def index
+    @owners = Book.pluck(:owner).uniq
+  end
+
+
   def new
 
   end

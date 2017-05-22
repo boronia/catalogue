@@ -1,0 +1,38 @@
+<div class="container">
+  <h1 class="page-header">All the books...</h1>
+
+  <ul class="nav nav-tabs">
+    <li class="active">
+      <a  href="#von" data-toggle="tab">Von</a>
+    </li>
+    <li>
+      <a href="#andrew" data-toggle="tab">Andrew</a>
+    </li>
+    <li>
+      <a href="#jade" data-toggle="tab">Jade</a>
+    </li>
+    <li>
+      <a href="#clara" data-toggle="tab">Clara</a>
+    </li>
+  </ul>
+
+  <div class="tab-content ">
+    <div class="tab-pane active" id="von">
+      <%= render partial: 'books_table', locals: {books: get_booklist('Von')} %>
+    </div>
+
+    <div class="tab-pane" id="andrew">
+      <%= render partial: 'books_table', locals: {books: get_booklist('Andrew')} %>
+    </div>
+
+    <div class="tab-pane" id="jade">
+      <%= render partial: 'books_table', locals: {books: get_booklist('Jade')} %>
+    </div>
+
+    <div class="tab-pane" id="clara">
+      <%= render partial: 'books_table', locals: {books: get_booklist('Clara')} %>
+    </div>
+  </div>
+</div>
+
+
