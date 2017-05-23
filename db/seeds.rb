@@ -7,4 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require File.dirname(__FILE__) + '/seed_helper.rb'
 
+puts 'Seeding database..'
 create_books
+puts 'Finished seeding database'
