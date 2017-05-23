@@ -3,6 +3,5 @@ Rails.application.routes.draw do
 
   resources :books
 
-  root 'home#home'
-
+  root 'books#index'
 end
