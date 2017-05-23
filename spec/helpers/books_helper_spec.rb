@@ -21,5 +21,9 @@ RSpec.describe BooksHelper, type: :helper do
       expect(helper.get_booklist('Sheryl Lee')).to eq(book_list)
       expect(helper.get_booklist('Jenny Manning')).to eq([book2])
     end
+
+    it 'returns empty list for owner not in database' do
+      expect(helper.get_booklist('Someone')).to eq([])
+    end
   end
 end

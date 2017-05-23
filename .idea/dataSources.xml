@@ -7,5 +7,11 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/catalogue</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="catalogue_test@localhost" uuid="35c470ff-68f1-4b26-a007-1f7bb3b4186d">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/catalogue_test</jdbc-url>
+    </data-source>
   </component>
 </project>
