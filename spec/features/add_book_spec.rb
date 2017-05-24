@@ -1,3 +1,5 @@
+require 'rails_helper'
+
 RSpec.describe 'Adding Books', :type => :feature  do
 
   describe 'Adding books' do

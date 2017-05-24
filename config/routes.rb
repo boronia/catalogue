@@ -3,5 +3,7 @@ Rails.application.routes.draw do
 
   resources :books
 
+  resources :wishlists
+
   root 'books#index'
 end
