@@ -3,14 +3,21 @@ class Wishlists extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            wishlists: props.data
+        }
+    }
 
-        };
+    renderWishlists() {
+        for (owner in this.state.wishlists) {
+            var books = this.state.wishlists[owner];
+            return <Wishlist owner={owner} books={books}/>
+        }
     }
 
     render() {
         return (
             <div className="wishlists">
-                ~Wishlists table here~
+                { this.renderWishlists() }
             </div>
         );
     }
