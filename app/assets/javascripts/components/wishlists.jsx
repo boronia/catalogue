@@ -8,10 +8,14 @@ class Wishlists extends React.Component {
     }
 
     renderWishlists() {
+        var res = [];
+        var key = 0;
         for (owner in this.state.wishlists) {
             const books = this.state.wishlists[owner];
-            return <Wishlist owner={owner} books={books}/>
+            res.push( <Wishlist key={key} owner={owner} books={books}/> );
+            key += 1;
         }
+        return res;
     }
 
     render() {
