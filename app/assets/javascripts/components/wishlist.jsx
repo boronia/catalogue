@@ -10,7 +10,6 @@ class Wishlist extends React.Component {
 
     renderWishlist() {
         return this.state.books.map((book, index) =>
-
             <li key={index}>{book}</li>
         );
     }

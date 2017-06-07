@@ -9,7 +9,7 @@ class Wishlists extends React.Component {
 
     renderWishlists() {
         for (owner in this.state.wishlists) {
-            var books = this.state.wishlists[owner];
+            const books = this.state.wishlists[owner];
             return <Wishlist owner={owner} books={books}/>
         }
     }
