@@ -1,3 +1,3 @@
 class Wishlist < ApplicationRecord
-  has_many :books
+  has_and_belongs_to_many :books, join_table: 'wishlists_books'
 end

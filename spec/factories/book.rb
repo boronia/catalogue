@@ -7,7 +7,6 @@ FactoryGirl.define do
     category  'Fiction'
     latest_volume nil
     current_volume nil
-    wishlist_id nil
   end
 
 end

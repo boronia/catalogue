@@ -1,0 +1,3 @@
+class WishlistsBooks < ApplicationRecord
+
+end

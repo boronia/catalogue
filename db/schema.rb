@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170521120549) do
+ActiveRecord::Schema.define(version: 20170609004342) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,13 @@ ActiveRecord::Schema.define(version: 20170521120549) do
     t.string   "owner"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "wishlists_books", id: false, force: :cascade do |t|
+    t.integer "wishlist_id"
+    t.integer "book_id"
+    t.index ["book_id"], name: "index_wishlists_books_on_book_id", using: :btree
+    t.index ["wishlist_id"], name: "index_wishlists_books_on_wishlist_id", using: :btree
   end
 
 end

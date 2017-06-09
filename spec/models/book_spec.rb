@@ -2,6 +2,8 @@ require 'rails_helper'
 
 RSpec.describe Book, type: :model do
 
+  it { is_expected.to have_and_belong_to_many(:wishlists) }
+
   describe 'Check Book Factory' do
     let(:title) { 'Pride and Prejudice' }
     let(:author) { 'Jane Austen' }
