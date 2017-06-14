@@ -20,8 +20,10 @@ class Wishlists extends React.Component {
 
     render() {
         return (
-            <div className="wishlists">
-                { this.renderWishlists() }
+            <div className="container">
+                <div className="wishlists">
+                    { this.renderWishlists() }
+                </div>
             </div>
         );
     }

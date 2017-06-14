@@ -13,9 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require bootstrap.min
 //= require turbolinks
 //= require react
 //= require react_ujs
+//= require select2
 //= require components
 //= require_tree .
+
+$( "#dropdown" ).select2({
+    theme: "bootstrap"
+});
