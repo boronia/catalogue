@@ -13,7 +13,6 @@ class BooksController < ApplicationController
     @book = Book.new(book_permitted_params)
     @book.save
     redirect_to @book
-
   end
 
   def show
